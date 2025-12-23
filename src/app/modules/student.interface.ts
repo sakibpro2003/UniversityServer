@@ -7,8 +7,8 @@ export type Student = {
   email: string;
   avatar?: string;
   contactNumber: string;
-  bloodGroup: "A+" | "B+" | "O+";
+  bloodGroup: ["A+" | "B+" | "O+"];
   presentAddress: string;
   parmanentAddress: string;
-  gender: "male" | "female";
+  gender: ["male" | "female"];
 };
