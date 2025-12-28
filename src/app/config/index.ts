@@ -1,9 +1,11 @@
 import dotenv from "dotenv";
 import path from "path";
 
-dotenv.config({ path: path.join((process.cwd(), ".env")) });
+// Load environment variables from the project root .env file.
+ dotenv.config({ path: path.join((process.cwd(), ".env")) });
 
 
+// Centralize config values consumed by the app.
 export default {
     database_url: process.env.DATABASE_URL,
     port: process.env.PORT,

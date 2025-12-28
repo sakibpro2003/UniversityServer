@@ -1,3 +1,4 @@
+// TypeScript shape for student entities used across the app.
 export type Student = {
   id: string;
   name: {

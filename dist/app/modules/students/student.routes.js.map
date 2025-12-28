@@ -1,0 +1,1 @@
+{"version":3,"file":"student.routes.js","sourceRoot":"","sources":["../../../../src/app/modules/students/student.routes.ts"],"names":[],"mappings":"AAAA,OAAO,OAAO,MAAM,SAAS,CAAC;AAC9B,OAAO,EAAE,kBAAkB,EAAE,MAAM,yBAAyB,CAAC;AAE7D,MAAM,MAAM,GAAG,OAAO,CAAC,MAAM,EAAE,CAAC;AAEhC,MAAM,CAAC,IAAI,CAAC,iBAAiB,EAAE,kBAAkB,CAAC,aAAa,CAAC,CAAC;AACjE,MAAM,CAAC,MAAM,aAAa,GAAG,MAAM,CAAC"}

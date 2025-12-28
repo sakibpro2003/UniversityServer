@@ -2,6 +2,7 @@ import mongoose, { model } from "mongoose";
 import type { Student } from "./student.interface.js";
 const { Schema } = mongoose;
 
+// Mongoose schema describing the Student document shape.
 const studentSchema = new Schema({
   id: { type: String },
   name: {
@@ -17,4 +18,4 @@ const studentSchema = new Schema({
   gender: { type: String, enum: ["male", "female"] },
 });
 
-const Student = model<Student>("Student", studentSchema);
+export const StudentModel = model<Student>("Student", studentSchema);
