@@ -9,4 +9,5 @@ import path from "path";
 export default {
     database_url: process.env.DATABASE_URL,
     port: process.env.PORT,
+    bcrypt_salt_round:process.env.BCRYPT_SALT_ROUND,
 }
