@@ -1,19 +1,18 @@
 import type { NextFunction, Request, Response } from "express";
 import status from "http-status";
-const globalErrorHandler = (
-  err: any,
+const notFound = (
   req: Request,
   res: Response,
   next: NextFunction
 ) => {
   //   const statusCode;
-  const message = "";
+  const message = "API NOT FOUND";
   const success = false;
-  return res.status(status.INTERNAL_SERVER_ERROR).json({
+  return res.status(status.NOT_FOUND).json({
     success,
     message,
-    error: err,
+    error:"",
   });
 };
 
-export default globalErrorHandler;
+export default notFound;

@@ -2,16 +2,15 @@ import type { TNewUser, TUser } from "./user.interface.js";
 import { User } from "./user.model.js";
 
 // Service layer for student persistence.
-const createStudentIntoDB = async (userData:TUser) => {
+const createStudentIntoDB = async (userData: TUser) => {
+  // const user: TNewUser = { role: "" };
 
-    // const user: TNewUser = { role: "" };
-
-    userData.role = "student";
+  userData.role = "student";
   const newUser = await User.create(userData);
-  if(Object.keys(newUser).length){
-    stud
-  }
-  return result;
+  // if(Object.keys(newUser).length){
+  //   stud
+  // }
+  return newUser;
 };
 
 export const userServices = {
