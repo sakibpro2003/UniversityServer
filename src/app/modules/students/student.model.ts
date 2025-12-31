@@ -28,6 +28,17 @@ const studentSchema = new Schema(
   }
 );
 
+
+// mongoose middleware
+// studentSchema.pre("save", function () {
+//   console.log("pre save");
+// });
+
+// studentSchema.post("save", function () {
+//   console.log("post save");
+// });
+
+// creates a new field from existing field data
 studentSchema.virtual("fullName").get(function () {
   const first = this.name?.firstname;
   const last = this.name?.lastName;
