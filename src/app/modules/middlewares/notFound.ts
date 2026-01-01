@@ -5,7 +5,6 @@ const notFound = (
   res: Response,
   next: NextFunction
 ) => {
-  //   const statusCode;
   const message = "API NOT FOUND";
   const success = false;
   return res.status(status.NOT_FOUND).json({

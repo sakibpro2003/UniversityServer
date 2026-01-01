@@ -1,13 +1,11 @@
-import type { Request, Response } from "express";
+import type { Request, RequestHandler, Response } from "express";
 import { userServices } from "./user.service.js";
 import type { TNewUser, TUser } from "./user.interface.js";
 
 // HTTP handler for creating a student.
-const createStudent = async (req: Request, res: Response) => {
+const createStudent: RequestHandler = async (req, res) => {
   try {
     const student = req.body;
-
-  
 
     const result = await userServices.createStudentIntoDB(student);
     res.status(200).json({

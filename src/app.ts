@@ -4,6 +4,7 @@ import { studentRoutes } from "./app/modules/students/student.routes.js";
 import { UserRoutes } from "./app/modules/users/user.route.js";
 import globalErrorHandler from "./app/modules/middlewares/globalErrorHandler.js";
 import notFound from "./app/modules/middlewares/notFound.js";
+import router from "./app/routes/index.js";
 
 // Parse JSON request bodies before handlers run.
 app.use(express.json());
@@ -14,8 +15,7 @@ app.get("/", (req: Request, res: Response) => {
 });
 
 // Mount student API routes under a versioned prefix.
-app.use("/api/v1/students", studentRoutes);
-app.use("/api/v1/user", UserRoutes);
+app.use("/api/v1", router);
 app.use(notFound);
 app.use(globalErrorHandler);
 
